@@ -27,7 +27,7 @@ def setup_axes(myg, num):
                         cbar_pad="10%",
                         cbar_size="25%",
                         axes_pad=(0.25, 0.65),
-                        add_all=True, label_mode="L")
+                        label_mode="L")
         cbar_title = True
 
     elif L_y > 2*L_x:
@@ -40,7 +40,7 @@ def setup_axes(myg, num):
                         cbar_pad="10%",
                         cbar_size="25%",
                         axes_pad=(0.65, 0.25),
-                        add_all=True, label_mode="L")
+                        label_mode="L")
 
     else:
         # 2-d grid of plots
@@ -54,6 +54,6 @@ def setup_axes(myg, num):
                         cbar_location="right",
                         cbar_pad="2%",
                         axes_pad=(0.65, 0.25),
-                        add_all=True, label_mode="L")
+                        label_mode="L")
 
     return f, axes, cbar_title
